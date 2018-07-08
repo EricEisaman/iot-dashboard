@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Starter app with Google Firebase and Socket.IO">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YHA-IoT</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="cards.css">
+    <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
+  <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <!-- d3.js svg visualization library and d3 dial chart-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.2.0/d3.min.js"></script>
+  <script src="./dial.chart.js"></script>
+  <script src="./dial.js"></script>
+  <!-- Card Class -->
+  <script src="./card.js"></script>
+  <link rel="stylesheet" href="dial.css">
+  <!-- Load the Socket.io networking library -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC_8I1z7gVEAGyz5V76Le6MJwP0Vj2YPPI",
+      authDomain: "yha-iot.firebaseapp.com",
+      databaseURL: "https://yha-iot.firebaseio.com",
+      projectId: "yha-iot",
+      storageBucket: "yha-iot.appspot.com",
+      messagingSenderId: "145122764209"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <link rel="icon" type="image/png" href="https://cdn.glitch.com/1a3d0526-b227-48ca-95b7-53e806694f71%2Ffavicon.png?1518981450363" />
+</head>
+<body>
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <!-- Splash Screen -->
+  <section id="page-splash">
+    <img src="https://cdn.glitch.com/1a3d0526-b227-48ca-95b7-53e806694f71%2Fyha-iot.png?1517079350329">
+    <h2>IoT Application Starter</h2>
+    <h4>Remix this project and add your credentials to .env and index.html to get started</h4>
+    <h4></h4>
+    <div>
+      <button id="sign-in-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect">
+        <i class="material-icons">account_circle</i> Sign in with Google</button>
+    </div>
+  </section>
+  <!-- Application Screen -->
+  <section id="page-app">
+    <!--  MDL CARDS START -->
+    
+    <div class="mdl-layout mdl-js-layout">
+    
+    <main class="mdl-layout__content">
+      <div class="mdl-grid" id="card-grid">
+        
+      </div> 
+    </main>
+</div>   
+    
+    <!--  MDL CARDS END -->
+    <div>
+      <button id="sign-out-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect">
+        <i class="material-icons">account_circle</i> Sign Out</button>
+    </div>
+  </section>
+</div>
+<script src="./client-module-plugin.js"></script>
+<script src="./client-module.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

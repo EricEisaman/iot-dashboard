@@ -1,0 +1,1 @@
+![App Screen](https://cdn.glitch.com/f0fe6efa-d0a9-4419-9a51-6afe79b04bc5%2Fiot-dashboard-0.1.png)
