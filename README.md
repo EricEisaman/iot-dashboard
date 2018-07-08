@@ -9,7 +9,8 @@ This starter project implements [Firebase](https://firebase.google.com/) to prov
 
 The Google Auth signin provides more security and a defined userbase from which you can start to build an application community.
 
-![IoT Dashboard](https://cdn.glitch.com/63db31f3-7fa5-43f6-b985-2d1aa61e9d7f%2Fdial.png)
+## This Image Links to a Video Overview
+<a href="https://youtu.be/KnVrTjFC2eo" no-opener no-referer><img src="https://cdn.glitch.com/f0fe6efa-d0a9-4419-9a51-6afe79b04bc5%2Fiot-dashboard-0.1.png?1530972982415" width="320px"></a>
 
 ## Getting Started
 To get started, you need to:
